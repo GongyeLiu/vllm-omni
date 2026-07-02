@@ -352,7 +352,7 @@ class RewardHead(nn.Module):
 
         for i in range(K):
             t_emb = t_embed_per_t[:, i, :]
-            
+
             vf_i = visual_features_per_t[i]
             tf_i = text_features_per_t[i] if text_features_per_t is not None else None
 

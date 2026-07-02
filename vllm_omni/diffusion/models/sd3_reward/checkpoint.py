@@ -35,4 +35,3 @@ def diffusers_lora_key_to_vllm_omni(key: str) -> str:
 
 def summarize_lora_key_mapping(state_dict: Mapping[str, torch.Tensor]) -> dict[str, str]:
     return {key: diffusers_lora_key_to_vllm_omni(key) for key in state_dict}
-

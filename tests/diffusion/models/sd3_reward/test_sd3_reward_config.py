@@ -27,4 +27,3 @@ def test_sd3_reward_config_overrides_nested_lora_config():
     assert config.lora_config.r == 8
     assert config.lora_config.lora_alpha == 16
     assert config.reward_head["num_queries"] == 2
-

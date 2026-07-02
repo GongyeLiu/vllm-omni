@@ -28,4 +28,3 @@ def test_summarize_lora_key_mapping_preserves_unpacked_output_keys():
         "transformer_blocks.0.attn.to_out.0.lora_A.default.weight": "transformer_blocks.0.attn.to_out.0.lora_A.default.weight",
         "transformer_blocks.0.attn.to_add_out.lora_A.default.weight": "transformer_blocks.0.attn.to_add_out.lora_A.default.weight",
     }
-
