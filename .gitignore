@@ -181,7 +181,9 @@ AGENTS.md
 .cursor/
 
 # scripts
-/scripts/
+/scripts/*
+!/scripts/
+!/scripts/train_sd3_reward.py
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
@@ -236,6 +238,8 @@ Thumbs.db
 
 # Data files
 data/
+!vllm_omni/diffusion/models/sd3_reward/data/
+!vllm_omni/diffusion/models/sd3_reward/data/*.py
 datasets/
 *.csv
 *.json

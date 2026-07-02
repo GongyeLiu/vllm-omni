@@ -171,6 +171,11 @@ _DIFFUSION_MODELS = {
         "pipeline_sd3",
         "StableDiffusion3Pipeline",
     ),
+    "StableDiffusion3RewardPipeline": (
+        "sd3_reward",
+        "pipeline_sd3_reward",
+        "StableDiffusion3RewardPipeline",
+    ),
     "FluxKontextPipeline": (
         "flux",
         "pipeline_flux_kontext",
@@ -513,6 +518,7 @@ _DIFFUSION_POST_PROCESS_FUNCS = {
     "InternVLAA1Pipeline": "get_internvla_a1_post_process_func",
     "LongCatImageEditPipeline": "get_longcat_image_post_process_func",
     "StableDiffusion3Pipeline": "get_sd3_image_post_process_func",
+    "StableDiffusion3RewardPipeline": "get_sd3_reward_post_process_func",
     "FluxKontextPipeline": "get_flux_kontext_post_process_func",
     "Flux2KleinPipeline": "get_flux2_klein_post_process_func",
     "ErnieImagePipeline": "get_ernie_image_post_process_func",
